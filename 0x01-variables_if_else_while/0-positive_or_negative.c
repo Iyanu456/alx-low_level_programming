@@ -3,6 +3,7 @@
 #include <time.h>
 /**
 * fuction - that shows if a number is negative or positive
+* Description - checks if a number'n' is either positive negative or equal to zero
 *
 * Return: 0
 */
@@ -10,9 +11,6 @@ int main(void)
 {
 
 	int n;
-	
-
-
 	srand(time(0));
 	
 	n = rand() - RAND_MAX / 2;
