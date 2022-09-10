@@ -7,7 +7,7 @@
 int main(void)
 {
 	int x;
-	
+	gg
 	for (x = 'a'; x <= 'z'; x++)
 	{
 	putchar (x);
