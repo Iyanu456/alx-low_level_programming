@@ -3,7 +3,7 @@
  * main - prints all alphabets
  * Description: prints all the alphabets from a to z
  * Return: 0
-7 */
+*/
 int main(void)
 {
 	int x;
