@@ -8,7 +8,7 @@ int main(void)
 {
 	int x;
 
-	for (x = 'a'; x <= 'd'; x++)
+	for (x = 'a'; x <= 'z'; x++)
 	{
 	if (x == 'e' || x == 'q')
 	{
