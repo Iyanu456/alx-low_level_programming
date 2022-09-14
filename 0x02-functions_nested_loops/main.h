@@ -4,4 +4,4 @@
  * Return: 0
  */
 int _putchar(char);
-void prnt_alphabet(void);
+void print_alphabet(void);
