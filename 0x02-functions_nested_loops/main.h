@@ -1,3 +1,5 @@
+#ifndef MAIN_H
+#define MAIN_H
 /**
  * putchar - putchar prototype
  * Description: outputs a string
@@ -5,3 +7,4 @@
  */
 int _putchar(char);
 void print_alphabet(void);
+#endif
