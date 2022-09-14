@@ -1,9 +1,9 @@
 /**
-41;320;0c* putchar - putchar prototype
+ * putchar - putchar prototype
  * Description: outputs a string
  * Return: 0
  */
-int _putchar(char)
+int _putchar(char a)
 {
 	return (0);
 }
