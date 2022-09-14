@@ -1,8 +1,9 @@
 #include <ctype.h>
 #include "main.h"
 /**
- * @c: First operand
  * _islower - test for lowercase
+ * c: First operand
+ *
  * Description - test for lowecase letters
  * Return: integer values
  */
