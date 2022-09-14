@@ -5,11 +5,6 @@
  * Decription: prints all lower case alphabets
  * Return: null
  */
-int main(void)
-{
-	return (0);
-}
-
 void print_alphabet(void)
 {
 	int i;
