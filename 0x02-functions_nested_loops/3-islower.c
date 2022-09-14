@@ -1,7 +1,7 @@
 #include <ctype.h>
 #include "main.h"
 /**
- * @c: the character to check
+ * @c: First operand
  * _islower - test for lowercase
  * Description - test for lowecase letters
  * Return: integer values
