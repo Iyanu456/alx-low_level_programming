@@ -1,6 +1,7 @@
 #include <ctype.h>
 #include "main.h"
 /**
+ * @c: the character to check
  * _islower - test for lowercase
  * Description - test for lowecase letters
  * Return: integer values
