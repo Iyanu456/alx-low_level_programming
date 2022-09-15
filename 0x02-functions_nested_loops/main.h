@@ -2,6 +2,7 @@
 #define MAIN_H
 /**
  * putchar - putchar prototype
+ * @c - prints c
  * Description: outputs a string
  * Return: 0
  */
