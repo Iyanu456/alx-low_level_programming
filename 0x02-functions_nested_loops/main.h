@@ -1,5 +1,5 @@
 #ifndef MAIN_H
-#cdefine MAIN_H
+#define MAIN_H
 /**
  * putchar - putchar prototype
  * @c - prints c
