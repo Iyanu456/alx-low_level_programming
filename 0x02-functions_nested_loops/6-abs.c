@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "main.h"
+0;276;0c#include "main.h"
 /**
  * _abs - computes absolute values
  * Description - computes absolute values
@@ -7,7 +7,5 @@
  */
 int _abs(int n)
 {
-	int n;
-
 	return (abs(n));
 }
