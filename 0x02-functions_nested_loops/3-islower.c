@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * _islower - test for lowercase
- * @\c: First operand
+ * @ c: First operand
  *
  * Description - test for lowecase letters
  * Return: integer values
