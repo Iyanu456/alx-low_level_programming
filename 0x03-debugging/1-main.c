@@ -7,7 +7,7 @@
  *
  *
  * Return: 0
-
+ *
  */
 
 
@@ -15,11 +15,13 @@
 int main(void)
 
 {
+
 /**
- *        int i;
- *
- *
+ * printf - prints a string
+ * @'Infinite loop incoming :': prints a a value
  */
+
+
 	printf("Infinite loop incoming :(\n");
 
 
