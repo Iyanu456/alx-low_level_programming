@@ -5,9 +5,9 @@
  * Description - computes absolute values
  * Return: integer values
  */
-int _abs(int)
+int _abs(int n)
 {
-	int;
+	int n;
 
 	return (abs(n));
 }
