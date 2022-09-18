@@ -9,7 +9,7 @@ int _isdigit(int c)
 {
 	int a;
 
-	for (a = '0'; a <= '9'; c++)
+	for (a = '0'; a <= '9'; a++)
 	{
 		if (c == a)
 		{
