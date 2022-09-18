@@ -11,9 +11,18 @@ void more_numbers(void)
 	{
 		int b;
 
-		for (b = "0"; b <= "14"; b++)
+		for (b = '0'; b <= '9'; b++)
 		{
 			_putchar (b);
+
+			if (b == '9')
+			{
+				int c;
+
+				for (c = '0'; c <=v'4'; c++)
+				{
+					_putchar('1' + (c));
+				}
 		}
 		_putchar ('\n');
 	}
