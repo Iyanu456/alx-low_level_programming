@@ -19,10 +19,11 @@ void more_numbers(void)
 			{
 				int c;
 
-				for (c = '0'; c <=v'4'; c++)
+				for (c = '0'; c <= '4'; c++)
 				{
 					_putchar('1' + (c));
 				}
+			}
 		}
 		_putchar ('\n');
 	}
