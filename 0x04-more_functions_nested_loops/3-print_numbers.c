@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * _print_numbers - checks for uppercase
+ *print_numbers - checks for uppercase
  * Description: checks for uppercase
  * Return: 1
  */
-int print_numbers(void)
+void print_numbers(void)
 {
 	int a;
 
@@ -12,6 +12,5 @@ int print_numbers(void)
 	{
 		_putchar(a);
 	}
-	_,putchar('\n')
-	return (1);
+	_putchar('\n');
 }
