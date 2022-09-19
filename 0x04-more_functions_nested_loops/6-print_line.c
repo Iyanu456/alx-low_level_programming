@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * print_line - checks for uppercase
+ * @n: an integer
  * Description: checks for uppercase
  */
 void print_line(int n)
@@ -13,11 +14,12 @@ void print_line(int n)
 		{
 			_putchar ('_');
 		}
-		else if (n <= 0)
+		else
 		{
 			_putchar ('\n');
 
 			break;
 		}
 	}
+	_putchar ('\n');
 }
