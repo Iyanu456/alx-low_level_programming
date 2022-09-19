@@ -11,11 +11,11 @@ void rev_string(char *s)
 {
 	int n, i, c;
 
-	c = 2;
+	c = (strlen(s) / '2');
 
-	for (n = (strlen(s) - 1); n >= (strlen(s) / c); n--)
+	for (n = (strlen(s) - 1); n >= k; n--)
 	{
-		for (i = 0; i <= (strlen(s) / c); i++)
+		for (i = 0; i <= k; i++)
 		{
 			int p1, p2;
 
