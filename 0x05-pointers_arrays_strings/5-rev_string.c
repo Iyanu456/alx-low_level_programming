@@ -9,11 +9,13 @@
 
 void rev_string(char *s)
 {
-	int n, i;
+	int n, i, c;
 
-	for (n = (strlen(s) - 1); n >= (strlen(s) / 2); n--)
+	c = 2;
+
+	for (n = (strlen(s) - 1); n >= (strlen(s) / c); n--)
 	{
-		for (i = 0; i <= (strlen(s) / 2); i++)
+		for (i = 0; i <= (strlen(s) / c); i++)
 		{
 			int p1, p2;
 
