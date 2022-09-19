@@ -1,0 +1,15 @@
+#include "main.h"
+#include <string.h>
+/**
+ * print_rev - prints a string
+ * @str: integer
+ * Description: prints a string to std output
+ */
+
+void print_rev(char *s)
+{
+	char b;
+
+	b = strrev(s);
+	_putchar (b);
+}
