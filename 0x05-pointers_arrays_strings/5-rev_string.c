@@ -22,9 +22,8 @@ void rev_string(char *s)
 			p1 = s[i];
 			p2 = s[n];
 
-			s[i] = p2;
 			s[n] = p1;
+			s[i] = p2;
 		}
 	}
-	_putchar ('\n');
 }
