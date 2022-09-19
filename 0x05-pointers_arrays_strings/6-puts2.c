@@ -13,7 +13,7 @@ void puts2(char *str)
 
 	n = (strlen(str) - 1);
 
-	for (i = 0; i <= n, i++)
+	for (i = 0; i <= n; i++)
 	{
 		if (i % 2 != 0)
 		{
@@ -24,5 +24,5 @@ void puts2(char *str)
 			_putchar((str[i]));
 		}
 	}
-	return ('\n');
+	_putchar ('\n');
 }
