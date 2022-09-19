@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * swap_int - rests an integer to 98
+0;276;0c * swap_int - rests an integer to 98
  * @a: an integer
  * @b: an integer
  * Description: resets a number to 98
@@ -8,15 +8,15 @@
 
 void swap_int(int *a, int *b)
 {
-	int *p1;
+	int p;
 
-	*p1 = *a;
+	p = *a;
 
-	int *p2;
+	int d;
 
-	*p2 = *b;
+	d = *b;
 
-	*a = *p2;
+	*a = d;
 
-	*b = *p1;
+	*b = a;
 }
