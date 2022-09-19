@@ -5,6 +5,8 @@
  */
 int print_line(int n)
 {
+	int a;
+
 	for (a = 0; a <= n; a++)
 	{
 		if (n > 0)
@@ -14,7 +16,7 @@ int print_line(int n)
 		else
 		{
 			_putchar ('\n');
-			
+
 			break;
 		}
 	}
