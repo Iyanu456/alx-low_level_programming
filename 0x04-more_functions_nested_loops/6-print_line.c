@@ -3,7 +3,7 @@
  * print_line - checks for uppercase
  * Description: checks for uppercase
  */
-int print_line(int n)
+void print_line(int n)
 {
 	int a;
 
