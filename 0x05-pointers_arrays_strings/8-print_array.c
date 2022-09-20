@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-0;276;0c#include <string.h>
+#include <string.h>
 /**
  * print_array -reverses a string
  * @a: array
@@ -17,9 +17,9 @@ void print_array(int *a, int n)
 		if (n <= 0)
 		{
 			printf("\n");
-			break ;
+			break;
 		}
-		else if (i == n-1)
+		else if (i == n - 1)
 		{
 			printf("%d\n", a[i]);
 		}
