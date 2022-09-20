@@ -8,10 +8,10 @@
  * Description: prints a string to std output
  */
 
-char _strcpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 	strcpy(dest, src);
-	char c;
+	char *c;
 
 	c = *dest;
 	return (c);
