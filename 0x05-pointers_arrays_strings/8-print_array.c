@@ -4,7 +4,7 @@
 /**
  * print_array -reverses a string
  * @a: array
- * @n: integer
+0;276;0c * @n: integer
  * Description: prints items in an array;
  */
 
@@ -17,6 +17,7 @@ void print_array(int *a, int n)
 		if (n <= 0)
 		{
 			printf("%d", a[i]);
+			printf(" ");
 		}
 		else if (i == n - 1)
 		{
