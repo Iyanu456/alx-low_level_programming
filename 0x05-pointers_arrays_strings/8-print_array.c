@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <string.h>
-0;276;0c/**
+/**
  * print_array -reverses a string
  * @a: array
  * @n: integer
