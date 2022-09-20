@@ -14,13 +14,7 @@ void print_array(int *a, int n)
 
 	for (i = 0; i < n; i++)
 	{
-		if (n <= 0)
-		{
-			printf("\n");
-			printf("\n");
-			break;
-		}
-		else
+		if (n > 0)
 		{
 			if (i == n - 1)
 			{
@@ -31,6 +25,11 @@ void print_array(int *a, int n)
 			{
 				printf("%d, ", a[i]);
 			}
+		}
+		else
+		{
+			printf("\n");
+			printf("\n");
 		}
 	}
 }
