@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <string.h>
-/**
+0;276;0c/**
  * print_array -reverses a string
  * @a: array
  * @n: integer
@@ -20,13 +20,17 @@ void print_array(int *a, int n)
 			printf("\n");
 			break;
 		}
-		else if (i == n - 1)
-		{
-			printf("%d", a[i]);
-		}
 		else
 		{
-			printf("%d, ", a[i]);
+			if (i == n - 1)
+			{
+				printf("%d", a[i]);
+				printf("\n");
+			}
+			else
+			{
+				printf("%d, ", a[i]);
+			}
 		}
 	}
 }
