@@ -12,7 +12,14 @@ void print_diagonal(int n)
 	{
 		if (n > 0)
 		{
-			_putchar ('\\');
+			if (a == 0)
+			{
+				continue;
+			}
+			else
+			{
+				_putchar ('.');
+			}
 		}
 		else
 		{
@@ -21,5 +28,6 @@ void print_diagonal(int n)
 			break;
 		}
 	}
+	_putchar ('\\');
 	_putchar ('\n');
 }
