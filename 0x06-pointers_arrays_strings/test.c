@@ -3,6 +3,9 @@
 
 int main(void)
 {
-	string_toupper("hellO");
-	return (0);
+	char b;
+	
+	printf(string_toupper("hellO"));
+   
+return (0);
 }
