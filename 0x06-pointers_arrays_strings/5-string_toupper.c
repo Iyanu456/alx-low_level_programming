@@ -7,8 +7,18 @@
  */
 char *string_toupper(char *c)
 {
-	char upper;
+	int i;
 
-	upper = (c - 32);
-	return (upper);
+	for (i = 0; i < strlen(c); i++)
+	{
+		if (c[i] > 96 && c[i] < 123)
+		{
+			c[i] = (c[i] + 35);
+		}
+		else
+		{
+			continue;
+		}
+	}
+	return (c);
 }
