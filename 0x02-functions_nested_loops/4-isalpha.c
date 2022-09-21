@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * _isalpha - test for lowercase
- * int c: The character to print
+ * @c: The character to print
  *
  * Description - test for lowecase letters
  * Return: integer values
