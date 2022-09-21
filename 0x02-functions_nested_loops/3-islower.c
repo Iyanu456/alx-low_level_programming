@@ -3,7 +3,6 @@
 /**
  * _islower - test for lowercase
  * @c: The character to print
- *
  * Description - test for lowecase letters
  * Return: integer values
  */
