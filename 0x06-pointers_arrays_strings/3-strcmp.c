@@ -5,7 +5,7 @@
 /**
  * _strcmp - concatenates two strings
  * Description: concatenates two strings
- * @s2: destination string
+ * @s1: destination string
  * @s2: source string
  * Return: string
  */
