@@ -1,13 +1,13 @@
 #include "main.h"
 #include <string.h>
 /**
- * rev_array -reverses a string
+ * reverse_array -reverses a string
  * @a: an array
  * @n: number of array element
  * Description: prints a string to std output
  */
 
-void rev_array(int *a, int n)
+void reverse_array(int *a, int n)
 {
 	int i, k;
 
