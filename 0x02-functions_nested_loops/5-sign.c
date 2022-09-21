@@ -1,8 +1,8 @@
 #include <ctype.h>
 #include "main.h"
 /**
- * _isalpha - test for lowercase
- * @c: The character to print
+ * print_sign - test for lowercase
+ * @n: The character to print
  * Description - test for lowecase letters
  * Return: integer values
  */
