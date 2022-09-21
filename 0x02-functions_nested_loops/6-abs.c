@@ -2,6 +2,7 @@
 #include "main.h"
 /**
  * _abs - computes absolute values
+ * @n: integer
  * Description - computes absolute values
  * Return: integer values
  */
