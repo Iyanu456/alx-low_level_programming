@@ -3,6 +3,9 @@
 
 int main(void)
 {
-	print_square(4);
+	int i;
+
+	i = 4;
+	print_square(i);
 	return (1);
 }
