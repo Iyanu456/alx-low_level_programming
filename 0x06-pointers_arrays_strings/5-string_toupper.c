@@ -23,4 +23,5 @@ char *string_toupper(char *c)
 			continue;
 		}
 		return (c);
+	}
 }

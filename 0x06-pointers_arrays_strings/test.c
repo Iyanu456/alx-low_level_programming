@@ -3,9 +3,10 @@
 
 int main(void)
 {
-	char b;
-	
-	printf(string_toupper("hellO"));
+	char str[] = "welcome";
+	char *b;
+	b = string_toupper(str);
+	printf("%s \n",b);
    
 return (0);
 }
