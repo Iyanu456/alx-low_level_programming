@@ -10,9 +10,10 @@
  */
 char *string_toupper(char *c)
 {
-	int i;
+	int i, j;
 
-	for (i = 0; i <= strlen(c) - 1; i++)
+	j = strlen(c) - 1;
+	for (i = 0; i <= j; i++)
 	{
 		if (c[i] >= 'a' && c[i] <= 'z')
 		{
@@ -22,6 +23,6 @@ char *string_toupper(char *c)
 		{
 			continue;
 		}
-		return (c);
 	}
+	return (c);
 }
