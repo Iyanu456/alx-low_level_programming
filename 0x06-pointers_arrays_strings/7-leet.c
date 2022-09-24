@@ -1,6 +1,3 @@
-#include <ctype.h>
-#include <stdio.h>
-#include <string.h>
 #include "main.h"
 /**
  * leet - converts lower to upper case
@@ -21,7 +18,7 @@ char *leet(char *c)
 		{
 			if (c[k] == leet[i] || c[k] - 32 == leet[i])
 			{
-				c[k] = i + '0';
+				c[k] = i;
 			}
 			else
 			{
