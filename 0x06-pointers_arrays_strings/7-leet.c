@@ -18,9 +18,9 @@ char *leet(char *c)
 	{
 		for (i = 0; i <= 7; i++)
 		{
-			if (c[i] == leet[i] || c[i] == leet[i] + 32)
+			if (c[k] == leet[i] || c[k] - 32 == leet[i])
 			{
-				c[i] = i;
+				c[k] = i + '0';
 			}
 			else
 			{
