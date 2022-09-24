@@ -10,10 +10,12 @@
  */
 char *leet(char *c)
 {
-	int i, j;
+	int i, j, k;
 
 	char leet[8] = { 'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
 	j = strlen(c) - 1;
+	for (k = 0; k <= j; k++)
+	{
 	for (i = 0; i <= 7; i++)
 	{
 		if (c[i] == leet[i] || c[i] == leet[i] + 32)
@@ -24,6 +26,8 @@ char *leet(char *c)
 		{
 			continue;
 		}
+	}
+	}
 	}
 	return (c);
 }
