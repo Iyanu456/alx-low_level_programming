@@ -19,7 +19,7 @@ char *leet(char *c)
 		{
 			if (c[k] == leet[i] || c[k] - 32 == leet[i])
 			{
-				c[k] = i;
+				c[k] = i + '0';
 			}
 			else
 			{

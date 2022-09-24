@@ -3,7 +3,7 @@
 
 int main(void)
 {
-	char str[] = "welcomeetthhuhhgf5y775fh 666666hu7666yh";
+	char str[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\n";
 	char *b;
 	b = leet(str);
 	printf("%s \n",b);
