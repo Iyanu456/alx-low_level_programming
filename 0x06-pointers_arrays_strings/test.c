@@ -3,9 +3,9 @@
 
 int main(void)
 {
-	char str[] = "welcome";
+	char str[] = "welcomeett";
 	char *b;
-	b = string_toupper(str);
+	b = leet(str);
 	printf("%s \n",b);
    
 return (0);

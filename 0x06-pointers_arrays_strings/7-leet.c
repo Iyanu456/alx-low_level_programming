@@ -16,18 +16,17 @@ char *leet(char *c)
 	j = strlen(c) - 1;
 	for (k = 0; k <= j; k++)
 	{
-	for (i = 0; i <= 7; i++)
-	{
-		if (c[i] == leet[i] || c[i] == leet[i] + 32)
+		for (i = 0; i <= 7; i++)
 		{
-			c[i] = i;
+			if (c[i] == leet[i] || c[i] == leet[i] + 32)
+			{
+				c[i] = i;
+			}
+			else
+			{
+				continue;
+			}
 		}
-		else
-		{
-			continue;
-		}
-	}
-	}
 	}
 	return (c);
 }
