@@ -1,3 +1,4 @@
+#include <string.h>
 #include "main.h"
 /**
  * leet - converts lower to upper case
