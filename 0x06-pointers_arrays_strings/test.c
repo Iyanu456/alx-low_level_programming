@@ -3,7 +3,7 @@
 
 int main(void)
 {
-	char str[] = "welcomeett";
+	char str[] = "welcomeetthhuhhgf5y775fh 666666hu7666yh";
 	char *b;
 	b = leet(str);
 	printf("%s \n",b);
