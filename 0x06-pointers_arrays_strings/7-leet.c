@@ -12,7 +12,7 @@ char *leet(char *c)
 {
 	int i, j;
 
-	char leet[8] = { 'O', 'L', '?', 'E', 'A', '?', '?', 'T'}
+	char leet[8] = { 'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
 	j = strlen(c) - 1;
 	for (i = 0; i <= 7; i++)
 	{
