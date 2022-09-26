@@ -2,14 +2,14 @@
 #include <string.h>
 
 /**
- * _strchr - locates a character in a string
+ * _strspn - function that gets the length of a prefix substring
  * @s: a char type(destination)
- * @c: a char type,(source)
- * Description: locates a character in a string
- * Return: *s if character is found or null if otherwise
+ * @accept: a char type,(source)
+ * Description: function that gets the length of a prefix substring
+ * Return: unsigned integer
  */
 
-char *_strchr(char *s, char c)
+unsigned int *_strspn(char *s, char *accept)
 {
-	return (strchr(s, c));
+	return (strspn(s, accept));
 }
