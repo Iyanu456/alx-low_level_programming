@@ -1,1 +1,1 @@
-Learning liw level programming with c
+more pointers arrays and strings
