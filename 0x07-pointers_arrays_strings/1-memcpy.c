@@ -2,11 +2,11 @@
 #include <string.h>
 
 /**
- * _memset - copies the first n bytes of the source area pointed to by dest
+ * _memcpy - copies the first n bytes of the source area pointed to by dest
  * @dest: a char type(destination)
  * @src: a char type,(source)
  * @n: an unsigned integer
- * Description: fills the first n bytes of the memory area pointed to by s
+ * Description: copies the first n bytes of the src area pointed to by desr
  * Return: *s
  */
 
