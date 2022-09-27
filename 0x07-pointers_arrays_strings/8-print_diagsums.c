@@ -10,24 +10,22 @@
 
 void print_diagsums(int *a, int size)
 {
-	int i, k, current_sum1, current_sum2;
+	int i, k, sum1, sum2;
 
-	current_sum1 = 0;
-	current_sum2 = 0;
+	sum1 = 0;
+	sum2 = 0;
 	for (i = 0; i < size; i++)
 	{
-		for (k = 0; k <= size; k++)
+		if (i != size)
 		{
-		if (k != size)
-		{
-			current_sum1 += a[(size - 1 - k)];
-			current_sum2 += a[i];
+			sum1 += a[i];
+			sum2 += a[size - 1 - i];
+			a += size;
 		}
 		else
 		{
 			break;
 		}
-		}
 	}
-	printf("%d, %d", current_sum1, current_sum2);
+	printf("%d, %d\n", sum1, sum2);
 }
