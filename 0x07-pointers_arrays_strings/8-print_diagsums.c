@@ -10,7 +10,7 @@
 
 void print_diagsums(int *a, int size)
 {
-	int i, *j , k, *n, current_sum1, current_sum2;
+	int i, *j, k, *n, current_sum1, current_sum2;
 
 	j = 0;
 	n = 0;
@@ -21,7 +21,7 @@ void print_diagsums(int *a, int size)
 	{
 		for (k = 0; k < size - 1; k++)
 		{
-		if (k != size -1)
+		if (k != size - 1)
 		{
 			current_sum1 += (a[i][j - k]);
 			*n = k;
