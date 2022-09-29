@@ -19,6 +19,7 @@ void _puts_recursion(char *s)
 	i++;
 	if (i < j)
 	{
+		i++;
 		_puts_recursion(s);
 	}
 }
