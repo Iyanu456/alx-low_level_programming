@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * _puts_recursion - prints a atring through recursion
  * @s: a string
@@ -13,9 +13,9 @@ void _puts_recursion(char *s)
 
 	i = 0;
 	_putchar(s[i]);
-	if (s[i] != '\0')
+	i++;
+	if (i < sizeof(s))
 	{
-		i++;
+		_puts_recursion(s);
 	}
-	_puts_recursion(s);
 }
