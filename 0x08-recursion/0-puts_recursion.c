@@ -1,6 +1,6 @@
 #include "main.h"
 #include "string.h"
-0;276;0c#include <stdio.h>
+#include <stdio.h>
 /**
  * _puts_recursion - prints a atring through recursion
  * @s: a string
