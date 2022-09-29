@@ -10,7 +10,7 @@
 
 void _puts_recursion(char *s)
 {
-	int i;
+	long unsigned int i;
 
 	i = 0;
 	_putchar(s[i]);
