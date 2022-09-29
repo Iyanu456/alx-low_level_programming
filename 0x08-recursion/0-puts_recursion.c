@@ -15,10 +15,9 @@ void _puts_recursion(char *s)
 	i = 0;
 	j = 0;
 	j = strlen(s);
-	_putchar(s[i]);
-	i++;
 	if (i < j)
 	{
+		_putchar(s[i]);
 		i++;
 	}
 	_puts_recursion(s);
