@@ -1,6 +1,6 @@
 #include "main.h"
 #include "string.h"
-#include <stdio.h>
+0;276;0c#include <stdio.h>
 /**
  * _puts_recursion - prints a atring through recursion
  * @s: a string
@@ -17,6 +17,6 @@ void _puts_recursion(char *s)
 	if(i < j)
 	{
 		_putchar(s[0]);
-		_putchar(s + 1);
+		_puts_recursion(s + 1);
 	}
 }
