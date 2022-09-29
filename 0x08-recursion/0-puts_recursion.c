@@ -10,7 +10,7 @@
 
 void _puts_recursion(char *s)
 {
-	int i, j;
+	int *i, j;
 
 	i = 0;
 	j = 0;
