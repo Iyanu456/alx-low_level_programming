@@ -15,7 +15,12 @@ int main(int argc, char *argv[])
 	int i, n, results;
 
 	results = 0;
-	if (argc > 2)
+	if (argc == 1)
+	{
+		printf("0\n");
+		return (0);
+	}
+	else if (argc > 2)
 	{
 		for (i = 1; i < argc; i++)
 		{
@@ -26,8 +31,10 @@ int main(int argc, char *argv[])
 					printf("Error\n");
 					return (1);
 				}
-
-			results += atoi(argv[i]);
+				else
+				{
+					results += atoi(argv[i]);
+				}
 			}
 		}
 		printf("%d\n", results);
