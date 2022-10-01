@@ -14,12 +14,12 @@ int main(int argc, char *argv[])
 {
 	int i, results;
 
+	results = 1;
 	if (argc > 1)
 	{
 		for (i = 1; i < argc; i++)
 		{
-			results = 1;
-			results *= atoi(argv[i]);
+			results = atoi(argv[i]);
 			printf("%d\n", results);
 		}
 	}
