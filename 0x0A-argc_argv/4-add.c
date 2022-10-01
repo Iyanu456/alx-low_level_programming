@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <ctype.h>
 #include <stdio.h>
 
 /**
@@ -12,8 +13,12 @@
 
 int main(int argc, char *argv[])
 {
-	int i, results;
+	int i, results, base;
 
+	char *endPtr;
+
+	long test;
+	base = 0;
 	results = 0;
 	if (argc == 1)
 	{
@@ -24,7 +29,8 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (*argv[i] >= 'a' && *argv[i] <= 'z')
+			test = strtol(argv[i], &endPtr, base);
+			if (*endPtr)
 			{
 				printf("Error\n");
 				return (1);
