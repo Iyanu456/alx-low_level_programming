@@ -5,7 +5,7 @@
  * main - calls main function
  * @argc: argument count
  * @argv: argument variable
- * Description: function that prints the total number of ccommand line arguments
+ * Description: prints the total number of ccommand line arguments
  * Return: 1
  */
 
