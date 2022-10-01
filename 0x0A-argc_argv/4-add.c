@@ -24,17 +24,13 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			for (n = 'a'; n <= 'z'; n++)
+			if (*argv[i] >= 'a' && *argv[i] <= 'z')
 			{
-				if (*argv[i] == n)
-				{
-					printf("Error\n");
-					return (1);
-				}
-				else
-				{
-					results += atoi(argv[i]);
-				}
+				printf("Error\n");
+			}
+			else
+			{
+				results += atoi(argv[i]);
 			}
 		}
 		printf("%d\n", results);
