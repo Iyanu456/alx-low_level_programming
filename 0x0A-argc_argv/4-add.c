@@ -17,7 +17,6 @@ int main(int argc, char *argv[])
 
 	char *endPtr;
 
-	long test;
 	base = 0;
 	results = 0;
 	if (argc == 1)
@@ -29,7 +28,7 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			test = strtol(argv[i], &endPtr, base);
+			strtol(argv[i], &endPtr, base);
 			if (*endPtr)
 			{
 				printf("Error\n");
