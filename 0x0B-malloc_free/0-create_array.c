@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include "main.h"
 /**
  * create_array - creates an array of given size
@@ -16,5 +17,9 @@ char *create_array(unsigned int size, char c)
 		int i;
 
 		a = malloc(sizeof(a) * size);
+		for (i = 0; i < size; i++)
+		{
+			a[i] = c;
+		}
 	}
 }
