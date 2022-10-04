@@ -10,23 +10,23 @@
 
 int **alloc_grid(int width, int height)
 {
-	int *grid, i, n, element = 0;
+	int **grid, i, n, element = 0;
 
 	if (width <= 0 || height <= 0)
 	{
 		return (NULL);
 	}
 
-	grid = malloc(sizeof(int) * (width + height + 1));
+	grid = (int **)malloc(sizeof(int) * (width + height + 1));
 
 	for (i = 0; i < height; i++)
 	{
 		*(grid + i);
 		for (n = 0; n < width; n++)
 		{
-			grid[n] = element;
+			grid[n] = 0;
 		}
 	}
 
-	return (0);
+	return (grid);
 }
