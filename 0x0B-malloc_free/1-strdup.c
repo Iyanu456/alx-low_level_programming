@@ -15,24 +15,23 @@ char *_strdup(char *str)
 
 	len = 0;
 	i = 0;
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 	while (str[i] != '\0')
 	{
 		i++;
 	}
 	str2 = malloc(sizeof(char) * (i +  1));
-	if (str2 == NULL)
-	{
-		return (NULL);
-	}
 
 	while (str[len] != '\0')
 	{
 		str2[len] = str[len];
 		len++;
 	}
-	if (str == NULL)
+	if (str2 == NULL)
 	{
-		str2 = NULL;
 		return (NULL);
 	}
 	else
