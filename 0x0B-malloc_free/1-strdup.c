@@ -21,9 +21,12 @@ char *_strdup(char *str)
 		str2[len] = str[len];
 		len++;
 	}
-	if (str == NULL || str2 == NULL)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
-	return (str2);
+	else
+	{
+		return (str2);
+	}
 }
