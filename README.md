@@ -1,1 +1,1 @@
-more pointers arrays and strings
+Static Libraries in C
