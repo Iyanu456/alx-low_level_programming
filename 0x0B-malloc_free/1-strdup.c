@@ -26,7 +26,7 @@ char *_strdup(char *str)
 		str2[len] = str[len];
 		len++;
 	}
-	if (str == NULL)
+	if (str == NULL || str  == '\0')
 	{
 		return (NULL);
 	}
