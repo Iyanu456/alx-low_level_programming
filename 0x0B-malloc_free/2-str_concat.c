@@ -10,6 +10,8 @@
 
 char *str_concat(char *s1, char *s2)
 {
+	char *new_string;
+
 	if (s1 == NULL)
 	{
 		s1 = "";
@@ -18,7 +20,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-	char *new_string;
 
 	int i, size1, size2;
 
