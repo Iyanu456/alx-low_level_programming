@@ -11,19 +11,21 @@ char *_strdup(char *str)
 {
 	char *str2;
 
-	int i;
+	int i, len;
 
-	i = 0;
 	str2 = malloc(sizeof(str));
 
-	while (str)
+	while (str[len] != '\0')
 	{
-		str2[i]=  str[i];
-		i++;
+		len++;
 	}
 	if (str == NULL || str2 == NULL)
 	{
 		return (NULL);
+	}
+	for (i = 0; i <= len; i++)
+	{
+		str2[i] = str[i];
 	}
 	return (str2);
 }
