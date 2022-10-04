@@ -21,7 +21,7 @@ char *_strdup(char *str)
 		str2[i] =  str[i];
 		i++;
 	}
-	if (str == NULL || str2 = NULL)
+	if (str == NULL || str2 == NULL)
 	{
 		return (NULL);
 	}
