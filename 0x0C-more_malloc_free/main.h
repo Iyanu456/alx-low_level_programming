@@ -1,4 +1,4 @@
 #ifndef MAIN_H
 #define MAIN_H
-void *mailloc_checked(unsigned int b);
+void *malloc_checked(unsigned int b);
 #endif
