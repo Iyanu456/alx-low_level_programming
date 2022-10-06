@@ -12,9 +12,9 @@ void *malloc_checked(unsigned int b)
 {
 	void *ptr;
 
-	if (b <= 0)
+	if (b == NULL)
 	{
-		exit(98);
+		return (NULL);
 	}
 	ptr = malloc(b);
 
