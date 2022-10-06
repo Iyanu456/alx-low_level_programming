@@ -26,7 +26,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 
 	new_arr = arr;
-	for (i = 0; i < nmemb; i++)
+	for (i = 0; i < (size * nmemb); i++)
 	{
 		new_arr[i] = '\0';
 	}
