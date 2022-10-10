@@ -1,4 +1,4 @@
-#include "main.h"
+#include "dog.h"
 /**
  * init_dog - initializes a dog struct
  * @d: pointer to dog struct
@@ -8,14 +8,6 @@
  * Description: dog struct
  * Return: void
  */
-struct dog
-{
-	char *name;
-
-	float age;
-
-	char *owner;
-};
 
 void int_dog(struct dog *d, char *name, float age, char *owner)
 {
