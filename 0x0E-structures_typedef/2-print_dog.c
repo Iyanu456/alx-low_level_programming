@@ -6,14 +6,6 @@
  * Description: dog struct
  * Return: void
  */
-struct dog
-{
-	char *name;
-
-	char *owner;
-
-	float age;
-}
 
 void print_dog(struct dog *d)
 {
