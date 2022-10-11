@@ -5,7 +5,7 @@
  * @d: new dog struct
  * Description: initializes a dog
  */
-void init_dog(struct dog *d)
+void print_dog(struct dog *d)
 {
 	if (d == NULL)
 		return;
