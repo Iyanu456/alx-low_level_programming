@@ -18,10 +18,8 @@ int int_index(int *array, int size, int (*cmp)(int))
 	{
 		n = array[index];
 
-		if (cmp(n) > 0)
+		if (cmp(n) != 0)
 			return (index);
-		if (cmp(n) == NULL)
-			return (-1);
 	}
 
 	return (-1);
