@@ -1,23 +1,25 @@
 #include <stdlib.h>
 /**
- * array_iterator - loops through an array
+ * int_index - searches for an integer in an array
  * @array: array
  * @size: size
- * @action: executed function
- * Description: loops through an array
+ * @cmp: pointer to function
+ * Description: searches for an integer in an array
  */
-void array_iterator(int *array, size_t size, void (*action)(int))
+void int_index(int *array, int size, int (*cmp)(int))
 {
-	if (array && size > 0 && action)
-	{
-	unsigned int i;
+	int index, n;
 
-	int n;
+	if (size <= 0)
+		return (-1);
 
-	for (i = 0; i < size; i++)
+	for (index = 0; index < size; index++)
 	{
-		n = array[i];
-		action(n);
+		n = array[index];
+
+		if (cmp(n) > 0)
+			return (index);
 	}
-	}
+
+	return (-1);
 }
