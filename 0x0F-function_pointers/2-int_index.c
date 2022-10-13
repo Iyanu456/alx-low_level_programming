@@ -5,8 +5,9 @@
  * @size: size
  * @cmp: pointer to function
  * Description: searches for an integer in an array
+ * Return: integer
  */
-void int_index(int *array, int size, int (*cmp)(int))
+int int_index(int *array, int size, int (*cmp)(int))
 {
 	int index, n;
 
