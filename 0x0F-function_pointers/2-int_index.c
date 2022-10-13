@@ -11,6 +11,8 @@ int int_index(int *array, int size, int (*cmp)(int))
 {
 	int index, n;
 
+	if (array && cmp)
+	{
 	if (size <= 0)
 		return (-1);
 
@@ -21,6 +23,6 @@ int int_index(int *array, int size, int (*cmp)(int))
 		if (cmp(n) != 0)
 			return (index);
 	}
-
+	}
 	return (-1);
 }
