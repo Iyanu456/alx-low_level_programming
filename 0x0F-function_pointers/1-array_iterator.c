@@ -3,6 +3,8 @@
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
+	if (array > 0 && size > 0)
+	{
 	unsigned int i;
 
 	int n;
@@ -11,5 +13,6 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 	{
 		n = array[i];
 		action(n);
+	}
 	}
 }
