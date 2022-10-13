@@ -1,5 +1,10 @@
 #include <stdlib.h>
 /**
+ * array_iterator - loops through an array
+ * @array: array
+ * @size: size
+ * @action: executed function
+ * Description: loops through an array
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
