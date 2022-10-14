@@ -12,6 +12,8 @@ int sum_them_all(const unsigned int n, ...)
 
 	int i, sum = 0;
 
+	if (n)
+	{
 	if (n == 0)
 		return (0);
 
@@ -24,4 +26,6 @@ int sum_them_all(const unsigned int n, ...)
 
 	va_end(item);
 	return (sum);
+	}
+	return (0);
 }
