@@ -18,8 +18,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	const char *str = separator;
 
-	if (str != NULL)
-	{
 		va_start(ap, n);
 
 		for (i = 0; i < n; i++)
@@ -30,14 +28,13 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 			if (i == n - 1)
 				break;
-
-			printf("%s", str);
+			if (str == NULL)
+				continue;
+			else
+				printf("%s", str);
 		}
 
 		va_end(ap);
 
 		printf("\n");
-	}
-	else
-		return;
 }
