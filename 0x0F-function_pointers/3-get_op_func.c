@@ -16,7 +16,7 @@ int (*get_op_func(char *s))(int, int)
 
 	i = 0;
 
-	while (ops)
+	while (i < 5)
 	{
 		if (ops[i].op[0] == s[i])
 			return (ops[i].f);
