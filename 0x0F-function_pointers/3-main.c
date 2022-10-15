@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-	if (*argv[2] != '+' || '-' || '*' || '/' || '%')
+	if (*argv[2] != '+' || '-' || '*' || '/' || 'b')
 	{
 		printf("Error\n");
 		exit(99);
