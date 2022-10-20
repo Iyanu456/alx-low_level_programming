@@ -3,7 +3,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-
+/**
+ * struct list_s - node list struct
+ * @str: string
+ * @len: length
+ * @next: next struct pointer
+ */
 typedef struct list_s
 {
 	char *str;

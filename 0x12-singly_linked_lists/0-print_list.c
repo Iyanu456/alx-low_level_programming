@@ -1,5 +1,10 @@
 #include "lists.h"
-
+/**
+ * print_list - prints a list
+ * @h: node pointer
+ * Description: prints a node list
+ * Return: size
+ */
 size_t print_list(const list_t *h)
 {
 	size_t count = 0;
