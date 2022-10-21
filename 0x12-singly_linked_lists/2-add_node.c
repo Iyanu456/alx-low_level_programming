@@ -2,6 +2,7 @@
 /**
  * add_node - creates a new node
  * @head: head node pointer
+ * @str: string
  * Description: creates a new node
  * Return: size
  */
