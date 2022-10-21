@@ -24,8 +24,12 @@ void print_dog(struct dog *d)
 
         if (name == NULL)
                 name = "(nil)";
+	else
+		name = d->name;
  	if (owner == NULL)
 		owner = "(nil)";
+	else
+		owner = d->owner;
 
 	printf("Name: %s\n", name);
     	printf("Owner: %s\n", owner);
