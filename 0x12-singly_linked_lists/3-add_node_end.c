@@ -16,8 +16,14 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	new_node = malloc(sizeof(list_t));
 
-	if (new_node == NULL || str == NULL)
+	if (new_node == NULL)
 		return (NULL);
+
+	if (str == NULL)
+	{
+		free(new_node);
+		return (NULL);
+	}
 
 	dup = strdup(str);
 	if (dup == NULL)
@@ -25,7 +31,7 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	new_node->str = dup;
 
-	while (str[len] != '\0')
+	while (dup[len] != '\0')
 		len++;
 
 	new_node->len = len;
