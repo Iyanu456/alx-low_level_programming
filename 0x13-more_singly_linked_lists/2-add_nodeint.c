@@ -6,7 +6,7 @@
  * Description: creates a new node
  * Return: size
  */
-listint_t *add_node(listint_t **head, const int n)
+listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *new_node;
 
