@@ -9,12 +9,11 @@
  * @len: length
  * @next: next struct pointer
  */
-typedef struct list_s
+typedef struct listint_s
 {
-	char *str;
-	unsigned int len;
-	struct list_s *next;
-} list_t;
+	int n;
+	struct listint_s *next;
+} listint_t;
 typedef struct node
 {
 	char *str;
@@ -23,7 +22,7 @@ typedef struct node
 
 int _putchar(char c);
 size_t print_listint(const list_t *h);
-size_t listint_len(const list_t *h);
+size_t listint_len(const listint_t *h);
 list_t *add_nodeint(list_t **head, const char *str);
 list_t *add_node_end(list_t **head, const char *str);
 void free_list(list_t *head);
