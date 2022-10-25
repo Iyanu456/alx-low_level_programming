@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * free_node - frees a node list
+ * free_list - frees a node list
  * @head: head node pointer
  * Description: frees a node list
  * Return: void
