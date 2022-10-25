@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-	if ((s == '/' && '%') && argv[3][0] == '0')
+	if ((s == '/' || '%') && argv[3][0] == '0')
 	{
 		printf("Error\n");
 		exit(100);

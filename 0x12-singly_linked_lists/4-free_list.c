@@ -1,10 +1,9 @@
 #include "lists.h"
 /**
- * add_node - creates a new node
+ * free_node - frees a node list
  * @head: head node pointer
- * @str: string
- * Description: creates a new node
- * Return: size
+ * Description: frees a node list
+ * Return: void
  */
 void free_list(list_t *head)
 {
@@ -13,11 +12,14 @@ void free_list(list_t *head)
 	if (head == NULL)
 		return;
 	if (head->next == NULL)
+	{
 		free(head);
+		return;
+	}
 	else
 	{
 		curr_node = head;
-		free(head);
+		
 		while (curr_node->next != NULL)
 		{
 			curr_node = curr_node->next;
