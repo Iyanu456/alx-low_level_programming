@@ -4,9 +4,13 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * struct list_s - node list struct
+ * struct listint_s - node list struct
+ * @n: length
+ * @next: next struct pointer
+ */
+/**
+ * struct node - node list parent
  * @str: string
- * @len: length
  * @next: next struct pointer
  */
 typedef struct listint_s
