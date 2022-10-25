@@ -19,11 +19,12 @@ void free_list(list_t *head)
 	else
 	{
 		prev_node = head;
-		while (prev_node->next != NULL)
+		while (head->next != NULL)
 		{
 			free(head);
 			prev_node = prev_node->next;
 			head = prev_node;
 		}
+		free(head);
 	}
 }
