@@ -8,16 +8,17 @@
  * @n: length
  * @next: next struct pointer
  */
-/**
- * struct node - node list parent
- * @str: string
- * @next: next struct pointer
- */
+
 typedef struct listint_s
 {
 	int n;
 	struct listint_s *next;
 } listint_t;
+/**
+ * struct node - node list structt
+ * @str: string
+ * @next: next struct pointer
+ */
 typedef struct node
 {
 	char *str;
