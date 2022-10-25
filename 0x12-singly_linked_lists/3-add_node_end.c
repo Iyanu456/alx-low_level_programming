@@ -24,7 +24,10 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	dup = strdup(str);
 	if (dup == NULL)
-		return (*head);
+	{
+		free(new_node);
+		return (NULL);
+	}
 
 	new_node->str = dup;
 
