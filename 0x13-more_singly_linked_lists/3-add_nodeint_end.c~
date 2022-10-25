@@ -6,13 +6,9 @@
  * Description: adds a new node to the end of a list
  * Return: size
  */
-list_t *add_node_end(list_t **head, const char *str)
+list_t *add_nodeint_end(list_t **head, const int n)
 {
 	list_t *new_node, *last;
-
-	size_t len;
-
-	char *dup;
 
 	new_node = malloc(sizeof(list_t));
 
@@ -22,16 +18,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (NULL);
 	}
 
-	dup = strdup(str);
-	if (dup == NULL)
-		return (*head);
-
-	new_node->str = dup;
-
-	for (len = 0; dup[len] != '\0'; len++)
-		;
-
-	new_node->len = len;
+	new_node->n = n;
 	new_node->next = NULL;
 	last = *head;
 
