@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * list_len - returns number of elements
+ * listint_len - returns number of elements
  * @h: node pointer
  * Description: returns number of elements
  * Return: size
