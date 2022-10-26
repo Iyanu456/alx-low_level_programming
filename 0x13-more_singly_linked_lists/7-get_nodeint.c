@@ -1,9 +1,10 @@
 #include "lists.h"
 /**
- * pop_listint - frees a node list
+ * get_nodeint_at_index - searches for a node index
  * @head: head node pointer
- * Description: frees a node list
- * Return: void
+ * @index: index
+ * Description: searches for a node index
+ * Return: list_int
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
