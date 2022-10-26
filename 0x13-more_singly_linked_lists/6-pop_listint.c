@@ -1,22 +1,22 @@
 #include "lists.h"
 /**
- * pop_listint - frees a node list
+ * free_listint2 - frees a node list
  * @head: head node pointer
  * Description: frees a node list
  * Return: void
  */
-int pop_listint(listint_t **head)
+void free_listint2(listint_t **head)
 {
 	listint_t *temp;
 
-	int n;
+	if (head == NULL)
+		return;
+	while (*head != NULL)
+	{
+		temp = (*head)->next;
+		free(*head);
+		*head = temp;
+	}
 
-	if (*head == NULL)
-		return (0);
-
-	temp = (*head)->next;
-	n = (*head)->n;
-	free(*head);
-	*head = temp;
-	return (n);
+	*head = NULL;
 }
