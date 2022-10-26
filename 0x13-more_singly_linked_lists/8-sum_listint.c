@@ -15,11 +15,10 @@ int sum_listint(listint_t *head)
 		return (0);
 
 	temp = head->next;
-	while (head)
+	while (temp)
 	{
 		sum += temp->n;
 		temp = temp->next;
-		head = temp;
 	}
 
 	return (sum);
