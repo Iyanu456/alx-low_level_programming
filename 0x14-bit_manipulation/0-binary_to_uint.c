@@ -10,7 +10,7 @@ unsigned int binary_to_uint(const char *b)
 
 	for (i = 0; b[i] != '\0'; i++)
 	{
-		if (b[i] != 1 || 0)
+		if (b[i] != '1' || '0')
 			return (0);
 
 		result += b[i] * (2 ^ i);
