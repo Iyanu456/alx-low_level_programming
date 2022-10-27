@@ -13,7 +13,7 @@ unsigned int binary_to_uint(const char *b)
 		if (b[i] > 1)
 			return (0);
 
-		result += b[i] * (2 ^ i);
+		result += (b[i] * (2 ^ i));
 		i++;
 	}
 
