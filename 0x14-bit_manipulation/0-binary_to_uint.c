@@ -1,4 +1,19 @@
 #include "main.h"
+unsigned int power(int base, int exponent)
+{
+	int i;
+
+	unsigned int result = base;
+
+	for (i = exponent; i > 0; i--)
+	{
+		if (i == 0)
+			return (result);
+		result = result * base;
+	}
+
+	return (result);
+}
 unsigned int binary_to_uint(const char *b)
 {
 	int i = 0;
@@ -13,7 +28,7 @@ unsigned int binary_to_uint(const char *b)
 		if (b[i] > 1)
 			return (0);
 
-		converted = b[i] * (2 & i);
+		converted = b[i] * power(2, i);
 		result += converted;
 		i++;
 	}
