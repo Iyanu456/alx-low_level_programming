@@ -28,7 +28,7 @@ unsigned int binary_to_uint(const char *b)
 		if (b[i] > 1)
 			return (0);
 
-		converted = b[i] * power(2, i);
+		converted = b[i] * (power(2, i));
 		result += converted;
 		i++;
 	}
