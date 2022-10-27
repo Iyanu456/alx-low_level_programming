@@ -3,12 +3,12 @@ unsigned int power(int base, int exponent)
 {
 	int i;
 
-	unsigned int result = base;
+	unsigned int result = 1;
 
 	for (i = exponent; i > 0; i--)
 	{
-		if (i == 0)
-			return (result);
+		if (exponent == 0)
+			return (1);
 		result = result * base;
 	}
 
