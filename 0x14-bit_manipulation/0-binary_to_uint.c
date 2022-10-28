@@ -57,10 +57,10 @@ unsigned int binary_to_uint(const char *b)
 		if (b[k] == 48)
 			n = 0;
 
-		if (b[k] <48 || b[k] > 49)
+		if (b[k] < 48 || b[k] > 49)
 			return (0);
-		else
-			result += (n * power(2, i - 1 -k));
+
+		result += (n * power(2, i - 1 - k));
 	}
 
 	return (result);
