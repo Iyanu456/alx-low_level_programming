@@ -30,7 +30,11 @@ unsigned int binary_to_uint(const char *b)
 		return (0);
 
 	while (b[i] != '\0')
+	{
+		if (b[i] != 48 || 49)
+			return (0);
 		i++;
+	}
 
 	for (k = i - 1; k >= 0; k--)
 	{
