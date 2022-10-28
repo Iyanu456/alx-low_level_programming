@@ -30,11 +30,7 @@ unsigned int binary_to_uint(const char *b)
 		return (0);
 
 	while (b[i] != '\0')
-	{
-		if (b[i] != 48 || b[i] != 49)
-			return (0);
 		i++;
-	}
 
 	for (k = i - 1; k >= 0; k--)
 	{
@@ -44,6 +40,8 @@ unsigned int binary_to_uint(const char *b)
 		if (b[k] == 48)
 			n = 0;
 
+		if (b[k] != 48 || 49)
+			return (0);
 		result += (n * power(2, i - 1 -k));
 	}
 
