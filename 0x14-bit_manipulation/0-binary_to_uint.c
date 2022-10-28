@@ -1,5 +1,14 @@
 #include "main.h"
 #include <string.h>
+
+/**
+ * power - raises a number to a power
+ * @base: base
+ * @exponent: exponent
+ * Description: raises a number to a power
+ * Return: unsigned int
+ */
+
 unsigned int power(int base, int exponent)
 {
 	int i;
@@ -20,6 +29,14 @@ unsigned int power(int base, int exponent)
 
 	return (result);
 }
+
+/**
+ * binary_to_uint - converts binary to decimal
+ * @b: decimal in charv type
+ * Description: converts binary to decimal
+ * Return: unsigned int
+ */
+
 unsigned int binary_to_uint(const char *b)
 {
 	int i = 0, k, n;
@@ -40,9 +57,10 @@ unsigned int binary_to_uint(const char *b)
 		if (b[k] == 48)
 			n = 0;
 
-		if (b[k] != 48 && 49)
+		if (b[k] <48 || b[k] > 49)
 			return (0);
-		result += (n * power(2, i - 1 -k));
+		else
+			result += (n * power(2, i - 1 -k));
 	}
 
 	return (result);
