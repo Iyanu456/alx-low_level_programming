@@ -38,7 +38,9 @@ unsigned int power(int base, int exponent)
  */
 void print_binary(unsigned long int n)
 {
-	int i = 0, j = 0, test = n;
+	unsigned int test = n;
+
+	int i = 0;
 
 	while (power(2, i) < test)
 		i++;
