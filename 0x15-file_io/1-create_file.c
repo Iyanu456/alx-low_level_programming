@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * read_textfile - reads a text file and writes it to sdtout
+ * create_file - creates a file
  * @filename: filename
- * @letters: letters
- * Description: reads a text file and writes it to stdout
- * Return: textfile
+ * @text_content: text content
+ * Description: creates a file
+ * Return: 1 on success else -1
  */
 
 int create_file(const char *filename, char *text_content)
@@ -36,5 +36,5 @@ int create_file(const char *filename, char *text_content)
 	closing = close(opened);
 	if (closing == -1)
 		return (-1);
-	return (wrote);
+	return (1);
 }
