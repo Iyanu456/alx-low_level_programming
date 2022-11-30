@@ -15,6 +15,3 @@ int get_bit(unsigned long int n, unsigned int index)
 
 	return (bitstatus);
 }
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
