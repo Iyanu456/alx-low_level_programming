@@ -1,57 +1,12 @@
-#include "main.h"
-#include <string.h>
-
+#include "holberton.h"
 /**
- * power - raises a number to a power
- * @base: base
- * @exponent: exponent
- * Description: raises a number to a power
- * Return: unsigned int
+ *print_binary - function that prints the binary representation of a number
+ *@n: the number
  */
 
-unsigned int power(int base, int exponent)
-{
-	int i;
-
-	unsigned int result = 1;
-
-	for (i = exponent; i > 0; i--)
-	{
-		if (exponent == 0)
-			return (1);
-		if (exponent == 1)
-		{
-			result = base;
-			return (result);
-		}
-		result = result * base;
-	}
-
-	return (result);
-}
-
-/**
- * binary_to_uint - converts binary to decimal
- * @b: decimal in charv type
- * Description: converts binary to decimal
- * Return: unsigned int
- */
 void print_binary(unsigned long int n)
 {
-	int i = 0, j = 0, test = n;
-
-	while (power(2, i) < test)
-		i++;
-
-	while (i >= 0)
-	{
-		if (test > power(2, i))
-			{
-				test = test - power(2, i);
-				_putchar ("1");
-			}
-		else
-			_putchar ("0");
-		i--;
-	}
+	if (n > 1)
+		print_binary(n >> 1);
+			_putchar((n & 1) + '0');
 }
