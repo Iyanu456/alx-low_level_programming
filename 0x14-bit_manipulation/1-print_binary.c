@@ -15,15 +15,12 @@ unsigned int power(int base, int exponent)
 
 	unsigned int result = 1;
 
+	if (exponent == 0)
+		return (1);
+	if (exponent == 1)
+		return (base);
 	for (i = exponent; i > 0; i--)
 	{
-		if (exponent == 0)
-			return (1);
-		if (exponent == 1)
-		{
-			result = base;
-			return (result);
-		}
 		result = result * base;
 	}
 
@@ -40,20 +37,29 @@ void print_binary(unsigned long int n)
 {
 	unsigned int test = n;
 
-	int i = 0;
+	int i = 0, count;
 
-	while (power(2, i) < test)
+	while (power(2, i) <= test)
 		i++;
 
-	while (i >= 0)
+	count = i;
+	while (count >= 0)
 	{
-		if (test > power(2, i))
+		if (test >= power(2, i))
 			{
-				test = test - power(2, i);
-				_putchar ('1');
+				printf("hello %d\n", power(2, i));
 			}
 		else
-			_putchar ('0');
+			printf("welcome %d\n", power(2, i));
+		count--;
 		i--;
+		test -= power(2,i);
 	}
+	_putchar('\n');
+}
+
+int main(void)
+{
+	print_binary(4);
+	return (0);
 }
