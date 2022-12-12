@@ -1,4 +1,4 @@
 #include "main.h"
-unsigned in _strspn(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 }
