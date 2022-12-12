@@ -1,4 +1,4 @@
 #include "main.h"
-int _strlen(int c)
+int _strlen(char *s)
 {
 }
