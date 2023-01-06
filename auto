@@ -1,4 +1,8 @@
 #!/bin/bash
+MESSAGE = "Default message"
+if [ '$#' -gt 0 ]
+	MESSAGE = "$1"
 git add .
-git commit -m 'default message'
+git commit -m '$MESSAGE'
 git push
+echo 'Files have been pushed to github successfully'
