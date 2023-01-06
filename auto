@@ -1,12 +1,6 @@
 #!/bin/bash
-MESSAGE="Default message"
-if [ $# -eq 0 ]
-  then
-      $MESSAGE="Default message"
-else
-   $MESSAGE=$1
-fi
+MESSAGE="$*"
 git add .
-git commit -m $MESSAGE
+git commit -m "$MESSAGE"
 git push
 echo 'Files have been successfully pushed to github'
