@@ -1,6 +1,0 @@
-#!/bin/bash
-MESSAGE="$*"
-git add .
-git commit -m "$MESSAGE"
-git push
-echo 'Files have been successfully pushed to github'

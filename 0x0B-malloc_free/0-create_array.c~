@@ -1,6 +1,0 @@
-#include "main.h"
-/**
- * create_array - creates an array of given size
- * @size: size of array
- * @c: a char
- * Description
