@@ -1,13 +1,30 @@
 #include <stdio.h>
 
+/**
+* main - Lanzador.
+*
+* Return: Always 0.
+*/
+
 int main(void)
 {
-	int i;
+	int a = '0';
 
-	for (i = 0; i <= 9; i++)
+
+	while (a <= '9')
 	{
-		putchar(i);
-		putchar(", ");
+		putchar(a);
+		if (a == '9')
+		{
+			putchar('\n');
+			return (0);
+		}
+		else
+		{
+			putchar(',');
+			putchar(' ');
+			a++;
+		}
 	}
 	return (0);
 }
