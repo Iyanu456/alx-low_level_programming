@@ -10,6 +10,7 @@ RM = rm -f
 
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
+
 %.o: %.c m.h:
 	$(CC) -c -o $@ $<
 all: $(OBJ)
